@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles2.css" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" >
+  <link href="css/styles2.css" rel="stylesheet">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts2.js"></script>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GadzooksBooks</title>
 </head>
 <body>
@@ -17,18 +14,20 @@
     <div>
       <form id="formOne">
         <div class="form-group">
-          <label for="animal1">An animal</label>
-          <input id="animal1" class="form-control" type="text">
+          <label for="animal">An animal</label>
+          <input id="animal" class="form-control" type="text">
         </div>
-        <div class="formTwo">
+        <div class="form-group">
           <label for="animals">Animals (plural)</label>
           <input id="animals" class="form-control" type="text">
         </div>
+      
+      <button type="submit" class="btn">Show me the story!</button>
       </form>
     </div>
     <div id="story">
       <h1>Chaos at the Zoo</h1>
-      <p>You hear screaming coming from the gates to the zoo. You stupidly run inside to see if you can help. You see <span class="animal1"></span> chasing a group of <span class="animals"></span></p>
+      <p>You hear screaming coming from the gates to the zoo. You stupidly run inside to see if you can help. You see <span class="animal"></span> chasing a group of <span class="animals"></span></p>
     </div>
   </div>
 </body>

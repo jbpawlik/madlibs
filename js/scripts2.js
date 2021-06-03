@@ -1,10 +1,14 @@
-
 $(document).ready(function() {
-  $("#formOne").submit(function(event) {
-    const animal1Input = $("input#animal1").val();
-    const animalsInput = $("input#animals").val();
-    $(".animal1").append("input#animal1");
-    $(".animals").append("input#animals");
-    $("#story").show();
+  $('#formOne').submit(function(event){
+    event.preventDefault();
+    const animalInput = $('input#animal').val();
+    const animalsInput = $('input#animals').val();
+    $('.animals').append(animalsInput);
+    $('.animal').append(animalInput);
+    
+    $('#story').show();
   })
-});
+
+
+})
+
